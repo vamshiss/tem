@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sortNumbers</title>
+</head>
+<body>
+<div style="text-align:center ;padding: 10px;">
+    <label for="number" style="margin-top: 30px;" >Number = 
+        <input type="number" id="numbers">
+    </label><br/>
+    <button onclick="myFunction()" >sort</button><br/>
+    <p1 id="demo"></p1>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("numbers").value;
+      document.getElementById("demo").innerHTML=x;
+    }
+    </script>
+</body>
+</html>

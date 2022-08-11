@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table, th, td {
+            text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    }
+    td {
+        font-size: 20px;
+        }
+    .container1 {
+        margin-top: 20px;
+        padding: auto;
+    }    
+    .container2 {
+        margin: 10px;
+        text-align: center;
+    }    
+    input{
+    padding: 5px;
+    margin: 5px;
+} 
+
+    .center{
+       
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container1" style="text-align:center"; >
+        <form class="formd" margin="5px" type="submit">
+            <p1 style="text-align:center">First Name:</p1><input  type="text" name="firstname"  style= "height:20px;" width="30px" /><br/>
+            <p2 style="text-align:center";>Last Name :</p2><input  type="text" name="Lastname" style= "height:20px" width="35px" margin="3px"/><br/>
+            <p3 style="text-align:center">Address   :</p3><input  type="text" name="address" style= "height:20px" width="30px" margin="3px"/><br/>
+            <p4 style="text-align:center">Email     :</p4><input  type="email" name="email" style= "height:20px" width="30px" margin="3px" /><br/>
+            <button type="button" onclick="submit">submit</button>
+        </form>
+         <br/>
+    </div><br/>
+    <div class="container2" >
+         <table  class="center" height="100px" width="500px">
+            <tr>
+                <td colspan="2">First Name</td>
+                <td colspan="2"> Last Name</td>
+                <td colspan="2">Address</td>
+                <td colspan="2">Email</td>   
+            </tr>
+            <tr>
+                <td colspan="2">Amitha </td>
+                <td colspan="2"> Bachan</td>
+                <td colspan="2">Hymavathi Residency,Plot No.14,silpa park,Kondapur
+                </td>
+
+                <td colspan="2">amitabh@bolywood.com</td>   
+            </tr>
+    </div>
+</body>

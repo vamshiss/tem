@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumbers</title>
+</head>
+<style>
+    form{
+        margin-top: 30px;
+        text-align: center;
+    }
+    input{
+        padding: 5px;
+        margin: 5px;
+    }
+    </style>
+<body>
+<div class="container1">
+    <form id="form" style=" padding: auto; margin-top: 10px;" >
+        <label for="number">FromNumber = 
+        <input type="number" name="numberf" id="num1"></label><br/>
+        <label for="number">ToNumber = 
+        <input type="number" name="numbert" id="num2"></label><br/>
+        <button onclick="myFunction()" >Result</button><br/> 
+    </form>
+</div>
+<div>
+    <p1 id="demo"></p1><br/></div>
+
+    <script>
+    function myFunction() {
+  
+        var nums = document.getElementById("demo");
+       var lowerNumber = document.getElementById("num1").value;
+       var higherNumber = document.getElementById("num2").value;
+        for (let i = lowerNumber; i <= higherNumber; i++) {
+            let flag = 0;
+
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+
+            if (i > 1 && flag == 0) {
+
+                document.write(nums.innerHTML ="<br/>"+i);
+            }
+        }}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataform</title>
+</head>
+<style>
+form{
+    margin-top: 30px;
+}
+input{
+    padding: 5px;
+    margin: 5px;
+}
+p1{
+    margin: 5px;
+}
+</style>
+<body>
+    <div class="container1" style="text-align:center"; >
+        <form action="" text-align="center">
+            <label for="firstname" >FirstName  : <input type="text" id="fname"></label><br/>
+            <label for="lastname" >LastName  : <input type="text" id="lname"></label><br/>
+            <label for="Address" >Address  : <input type="text" id="addr"></label><br/>
+            <label for="Email" >Email : <input type="email" id="email"></label><br/>       
+        </form>
+        <button onclick="myFunction()" >Details</button><br/>
+    </div>
+<div>
+        <p1 id="f1"></p1><br/>
+        <p1 id="f2"></p1><br/>
+        <p1 id="f3"></p1><br/>
+        <p1 id="f4"></p1>
+    </div><br/>
+<script>
+    function myFunction() {
+       
+      var fname = document.getElementById("fname").value;
+      document.getElementById("f1").innerHTML="Firstname : "+fname;
+      var lname = document.getElementById("lname").value;
+      document.getElementById("f2").innerHTML="Lastname : "+lname;
+      var Addr = document.getElementById("addr").value;
+      document.getElementById("f3").innerHTML="Address : "+Addr;
+      var email = document.getElementById("email").value;
+      document.getElementById("f4").innerHTML="Email : "+email;
+    }
+    </script>
+</body>
+</html>

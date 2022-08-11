@@ -1,0 +1,121 @@
+function isPrime(num) {
+    for (let i = 2; i * i <= num; i++)
+        if (num % i === 0)
+          return false; 
+    return num > 1;
+    ------
+    // program to print prime numbers between the two numbers
+
+// take input from the user
+const lowerNumber = parseInt(prompt('Enter lower number: '));
+const higherNumber = parseInt(prompt('Enter higher number: '));
+
+console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+
+// looping from lowerNumber to higherNumber
+for (let i = lowerNumber; i <= higherNumber; i++) {
+    let flag = 0;
+
+    // looping through 2 to user input number
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            flag = 1;
+            break;
+        }
+    }
+
+    // if number greater than 1 and not divisible by other numbers
+    if (i > 1 && flag == 0) {
+        console.log(i);
+    }
+}
+First, take the number N as input.
+Then use a for loop to iterate the numbers from 1 to 
+Then check for each number to be a prime number. If it is a prime number, print it
+
+function isPrime(num) {
+    for ( var i = 2; i < num; i++ ) {
+        if ( num % i === 0 ) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function display(n) {
+    var arr = [2];
+    for ( var i = 3; i < n; i+=2 ) {
+        if ( isPrime(i) ) {
+            arr.push(i);
+        }
+    }
+    console.log(arr); // use arr result on your own
+}
+
+display(100);
+    <script src="https://ajax.googleapis.com/ajax/libs/
+               jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn").click(function() {
+                $("input").blur();
+                $("p").html("This is blur method that is used!!!");
+            });
+        });
+    </script>
+    function isPrime(num) {
+  if (num <= 1) return false;
+  if (num == 2) return true;
+
+  for (let i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+let result = [];
+
+for (let j = 1; j <= 100; j++) {
+  if (isPrime(j)) {
+    result.push(j);
+  }
+}
+
+console.log(result);
+---------
+
+ for  (let i=num1;i<=num2;i++){
+        let isPrime=0;
+            for (let j=0; j<=i; j++){
+                if ( (i%j)== 0){
+                let isPrime=1;
+                break
+                }
+        }
+        if ((i > 1) && (isPrime == 0)){
+    let result=[]
+        }}});
+        document.write("")
+        function isPrime(num) {
+  if (num <= 1) return false;
+  if (num == 2) return true;
+
+  for (let i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+let result = [];
+
+for (let j = 1; j <= 100; j++) {
+  if (isPrime(j)) {
+    result.push(j);
+  }
+}
+
+console.log(result);
